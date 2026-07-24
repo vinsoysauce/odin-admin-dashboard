@@ -1,5 +1,5 @@
 * {
-    outline: 2px solid red;
+    outline: 1px solid red;
 }
 
 /*
@@ -65,6 +65,8 @@ header {
 
 nav {
   grid-row:  1 / 6;
+  background-color: #1992d4;
+  color: white;
 }
 
 main {
