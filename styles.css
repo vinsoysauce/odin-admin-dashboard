@@ -69,6 +69,20 @@ nav {
   color: white;
 }
 
+.nav-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-header-container, .item-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.dashboard-svg {
+  height: 30px;
+}
+
 main {
   display: grid;
   grid-column: 2 / 3;
