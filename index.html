@@ -10,11 +10,32 @@
 <body>
     <div class="container">
     <header>
-        Header
+    <div class="search-container">
+    <img id="search-svg" src="./svg/magnify.svg">
+    <form action="/search" method="GET" id="searchForm">
+    <input type="search" class="searchInput" name="s">
+    </form>
+    </div>
+    <div class="notification-container">
+        <img id="profile-notification" src="./svg/bell-ring.svg">
+        <img id="profile-picture" src="./images/garfield.png">
+        <h3>Garfield Lasagna</h3>
+    </div>
+    <div class="profile-container">
+        <img id="profile-main" src="./images/garfield.png">
+        <div>
+            <p>Hi there,</p>
+            <h2>Garfield Lasagna (@garfieldrocks)</h2>
+        </div>
+        <div>
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+        </div>
+    </div>
     </header>
     <nav>
         <div class="dashboard-container">
-
         <div>
             <div class="item-container">
             <img id="dashboard-svg" src="./svg/view-dashboard.svg">

@@ -52,12 +52,50 @@ h1, h2, h3, h4, h5, h6 {
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 4fr 2fr;
+  background-color:#e2e8f0;
 }   
 
 header {
   grid-column: 2 / 6;
   grid-row: 1 / 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: #ffffff;
 }
+
+#search-svg, #profile-notification {
+  min-width: 2rem;
+  width: 2rem;
+}
+
+#profile-picture {
+border-radius: 50%;
+width: 50px;
+height: 50px;
+}
+
+#profile-main {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.notification-container {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.search-container {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.profile-container {
+  display: grid;
+  grid-auto-flow: column;
+}
+
 
 nav { 
   display: grid;
@@ -71,7 +109,7 @@ nav {
   display: grid;
   grid-gap: 50px;
   grid-template-rows: 0fr 0fr 0fr;
-      min-width: 250px;
+  min-width: 250px;
 }
 
 .sidebar-one, .sidebar-two {
@@ -89,7 +127,7 @@ nav {
   display: grid;
   grid-auto-flow: column;
   justify-self: start;
-  grid-gap: 20px;
+  grid-gap: 10px;
   align-items: center;
 }
 
