@@ -134,7 +134,7 @@ height: 50px;
 }
 
 button {
-  background-color: orange;
+  background-color: darkslateblue;
   border-style: none;
   border-radius: 50px;
   color: white;
@@ -147,7 +147,7 @@ nav {
   display: grid;
   grid-column: 1 / 2;
   grid-row:  1 / 7;
-  background-color: orange;
+  background-color: darkslateblue;
   color: white;
   padding: 15px;
 }
@@ -188,7 +188,7 @@ main {
   grid-row: 2 / 7;  
   align-content: start;
   padding: 20px;
-  margin: 20px;
+
   grid-gap: 10px;
 }
 
@@ -196,7 +196,7 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   align-items: start;
-  gap: 30px;
+  grid-gap: 35px;
 }
 
 .article .card {
@@ -206,10 +206,10 @@ main {
 .card {
   padding: 30px;
   display: grid;
-  align-content: space-between;
-  border-left: 5px solid darkorange;
+  border-left: 10px solid darkblue;
   border-radius: 10px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: white;
 }
 
 .card-svg-container {
@@ -227,10 +227,27 @@ main {
   height: 25px;  
 }
 
-
-
 aside {
+  display: grid;
   grid-column: 3 / 6;
   grid-row: 2 / 7;
+  align-content: start;
+  padding: 20px;
+
+  grid-gap: 10px;
 }
 
+.announcements {
+  display: grid;
+  align-items: start; 
+  grid-gap: 10px;
+}
+
+.announcements-content {
+  display: grid;
+  grid-gap: 10px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;  
+  font-size: medium;
+}
