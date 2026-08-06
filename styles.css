@@ -61,6 +61,15 @@ body {
   grid-template-columns: 1fr 4fr 2fr;
 }   
 
+@font-face {
+  font-family: Elm_Sans;
+  src: url(./fonts/Elms_Sans/ElmsSans-VariableFont_wght.ttf); 
+}
+
+* {
+  font-family: Elm_Sans;
+}
+
 header {
   display: grid;
   grid-column: 2 / 4;
