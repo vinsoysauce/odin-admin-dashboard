@@ -51,30 +51,34 @@ h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 } 
 
+body {
+  background-color:#e2e8f0;
+}
 
 .container {
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 4fr 2fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  background-color:#e2e8f0;
 }   
 
 header {
-  grid-column: 2 / 5;
   display: grid;
-  grid-template-columns: 1fr 1fr;;
+  grid-column: 2 / 4;
+  grid-template-columns: 1fr;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   background-color: #ffffff;
   padding: 20px;
-  align-items: start;
+  padding-left: 50px;
+  padding-right: 50px;
   grid-gap: 20px;
-  align-items: center;
+}
+
+#para {
+  color: darkslategrey;
 }
 
 #search-svg, #profile-notification {
   min-width: 1.5rem;
-  width: 1.5rem;
 }
 
 #profile-picture {
@@ -85,51 +89,65 @@ height: 50px;
 
 #profile-main {
   border-radius: 50%;
-  min-width: 80px;
-  min-height: 80px;
+  width: 80px;
+  height: 80px;
 }
 
 #search-bar {
   border-radius: 50px;
   background-color: #e2e8f0;
   border-style: none;
-  width: 600px;
+  width: 350px;
   height: 30px;
 }
 
 .notification-container {
   display: grid;
   grid-auto-flow: column;
-  justify-items: end;
   align-items: center;
-  grid-template-columns: 1fr;
+  justify-content: end;
   grid-gap: 20px;
+}
+
+.search-notification-container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 10px;
+  justify-items: start;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .search-container {
   display: grid;
   grid-auto-flow: column;
-  grid-template-columns: 0fr;
   grid-gap: 10px;
+  align-items: center;
+}
+
+.profile-buttons-container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 20px;
   justify-items: start;
   align-items: center;
+  justify-content: space-between;
 }
 
 .profile-container {
   display: grid;
   grid-auto-flow: column;
-  justify-items: start;
-  grid-template-columns: 0fr 1fr;
+  align-items: start;
   grid-gap: 20px;
   align-items: center;
 }
 
-.header-buttons-container {
+.buttons-container {
   display: grid;
   grid-auto-flow: column;
   justify-items: end;
-  grid-template-columns: 1fr;
   grid-gap: 20px;
+  align-items: center;
   align-items: center;
 }
 
@@ -150,13 +168,14 @@ nav {
   background-color: darkslateblue;
   color: white;
   padding: 15px;
+  align-items: start;
 }
 
 .dashboard-container {
   display: grid;
   grid-gap: 50px;
-  grid-template-rows: 0fr 0fr 0fr;
-  min-width: 250px;
+  grid-template-columns: 1fr;
+  align-items: start;
 }
 
 .sidebar-one, .sidebar-two {
@@ -188,7 +207,6 @@ main {
   grid-row: 2 / 7;  
   align-content: start;
   padding: 20px;
-
   grid-gap: 10px;
 }
 

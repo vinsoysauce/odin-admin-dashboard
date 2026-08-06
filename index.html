@@ -10,28 +10,32 @@
 <body>
     <div class="container">
     <header>
+    <div class="search-notification-container">
     <div class="search-container">
     <img id="search-svg" src="./svg/magnify.svg">
     <form action="/search" method="GET" id="search">
     <input type="search" id="search-bar" name="search">
-    </form>
     </div>
-    <div class="notification-container">
+    </form>
+        <div class="notification-container">
         <img id="profile-notification" src="./svg/bell-ring.svg">
         <img id="profile-picture" src="./images/main-cat.png">
         <h3>Tobi Bradfur</h3>
     </div>
-    <div class="profile-container">
+    </div>
+    <div class="profile-buttons-container">
+        <div class="profile-container">
         <img id="profile-main" src="./images/main-cat.png">
         <div class="profile">
             <p>Hi there,</p>
             <h2>Tobi Bradfur (@tobi)</h2>
         </div>
-    </div>
-    <div class="header-buttons-container">
-        <button>New</button>
-        <button>Upload</button>
-        <button>Share</button>
+        </div>
+        <div class="buttons-container">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+        </div>
     </div>
     </header>
     <nav>
@@ -83,8 +87,8 @@
         <div class="article">
         <div class="card">
                 <div>
-                <p>
-                    <h4>Super Cool Project</h4>
+                <h4>Super Cool Project</h4>
+                <p id="para">
                     Sed tempus ut lacus ut scelerisque.
                     Suspendisse sollicitudin nibh erat, id
                     facilisis felis accumsan nec.
@@ -98,8 +102,8 @@
         </div>
         <div class="card">
                 <div>
-                <p>
-                    <h4>Less Cool Project</h4>
+                <h4>Less Cool Project</h4>
+                <p id="para">
                     Sed tempus ut lacus ut scelerisque.
                     Suspendisse sollicitudin nibh erat, id
                     facilisis felis accumsan nec.
@@ -113,8 +117,8 @@
         </div>
         <div class="card">
                 <div>
-                <p>
-                    <h4>Impossible App</h4>
+                <h4>Impossible App</h4>
+                <p id="para">
                     In hac habitasse platea dictumst. Vivamus
                     dictum rutrum arcu, a placerat belit saggitis
                     id.
@@ -128,8 +132,8 @@
         </div>
         <div class="card">
                 <div>
-                <p>
-                    <h4>Easy Peasy App</h4>
+                <h4>Easy Peasy App</h4>
+                <p id="para">
                     Etiam cursus eros ac efficitur fringilla.
                     Vestibulum dignissim urna eget accumsan 
                     aliquam. Curabitur dignissim nisi tortor
@@ -144,8 +148,8 @@
         </div>
         <div class="card">
                 <div>
-                <p>
-                    <h4>Ad Blocker</h4>
+                <h4>Ad Blocker</h4>
+                <p id="para">
                     Quisque eget rutrum nisl. Nam Augue
                     justo, cursus vitae metus vel, pharetra
                     hendrefit felis. Aliquam sed malesuada
@@ -160,8 +164,8 @@
         </div>
         <div class="card">
                 <div>
-                <p>
-                    <h4>Money Maker</h4>
+                <h4>Money Maker</h4>
+                <p id="para">
                     Praesent convallis, libero quis congue
                     elementum, nunc ante faucibus sapien, ac
                     scelerisque tortor purus sit amet ex.
@@ -182,24 +186,30 @@
             <div class="announcements-content">
                 <p>
                     <strong>Site Maintenance</strong><br>
+                    <span id="para">
                     Vestibulum condimentum tellus lacus,
                     in accumsan elit maximus ac. Donec
                     henderit sodales congue...
+                    </span>
                 </p>
                 <hr>
                 <p>
-                    <strong>Community Share Day</strong><br>    
+                    <strong>Community Share Day</strong><br>
+                    <span id="para">  
                     Nam vel lectus tincidunt, rutrum nulla
                     eu, ornare libero. Aliquam dictum
                     accumsan portitor...
+                    </span>  
                 </p>
                 <hr>
                 <p>
                     <strong>Updated Privacy Policy</strong><br>
+                    <span id="para">
                     Phasellus efficitur nisi eget elit
                     consectetur, eget condimentum ante
                     auctor. Cras fringilla sagittis sem in
                     mattis...
+                    </span>
                 </p>
             </div>
             </div>
@@ -207,31 +217,31 @@
             <h3>Trending</h3>
             <div class="trending-profile-container">
                 <div class="trending-profile">
-                    <img id="profile-trending" src="./images/main-cat.png">
+                    <img id="profile-trending" src="./images/car4.jpg">
                     <p>
-                        @tobi<br>
-                        Fur Shedding Champion
+                        @cheddar<br>
+                        <span id="para">Fur Shedding Champion</span>
                     </p>
                 </div>
                 <div class="trending-profile">
                 <img id="profile-trending" src="./images/cat2.jpg">
                     <p>
                         @oreo<br>
-                        Expert Bird Watcher
+                        <span id="para">Expert Bird Watcher</span>
                     </p>
                 </div>
                 <div class="trending-profile">
                 <img id="profile-trending" src="./images/cat3.jpg">
                     <p>
                         @salem<br>
-                        Loud Purring Machine
+                        <span id="para">Loud Purring Machine</span>
                     </p>
                 </div>
                 <div class="trending-profile">
                 <img id="profile-trending" src="./images/cat5.jpg">
                     <p>
                         @curry<br>
-                        Fastest Zoomer Ever
+                        <span id="para">Fastest Zoomies Ever</span>
                     </p>
                 </div>
             </div>
