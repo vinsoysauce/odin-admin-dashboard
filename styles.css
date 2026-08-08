@@ -118,7 +118,7 @@ height: 50px;
   grid-gap: 20px;
 }
 
-.search-notification-container {
+.profile{
   display: grid;
   grid-auto-flow: column;
   grid-gap: 10px;
